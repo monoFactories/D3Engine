@@ -107,9 +107,9 @@ public class Main extends Application {
     }
 
     private int getColorByHeight(float y) {
-        if (y < -1.0f) return 0xFF0000FF; // Вода (синий)
+        if (y < -0.5f) return 0xFF0000FF; // Вода (синий)
         if (y < 1.0f)  return 0xFF228B22; // Трава (зеленый)
-        if (y < 3.5f)  return 0xFF8B4513; // Горы/Земля (коричневый)
+        if (y < 2.5f)  return 0xFF8B4513; // Горы/Земля (коричневый)
         return 0xFFFFFFFF;                // Снег (белый)
     }
 
